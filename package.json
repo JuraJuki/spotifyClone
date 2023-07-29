@@ -26,7 +26,8 @@
   },
   "devDependencies": {
     "prettier": "^3.0.0",
-    "prettier-plugin-organize-imports": "^3.2.3"
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "supabase": "^1.82.2"
   },
   "prettier": {
     "plugins": [
