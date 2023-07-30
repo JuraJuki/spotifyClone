@@ -10,7 +10,7 @@ import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { useRouter } from "next/navigation";
 import { FC, useEffect } from "react";
 
-const AuthModal: FC<AuthModalProps> = () => {
+const AuthModal: FC = () => {
   const supabaseClient = useSupabaseClient();
   const router = useRouter();
   const { session } = useSessionContext();
