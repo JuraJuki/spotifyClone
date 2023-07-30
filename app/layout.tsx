@@ -1,4 +1,6 @@
 import Sidebar from "@/components/Sidebar";
+import ToasterProvider from "@/components/ToasterProvider";
+import { ModalProvider } from "@/providers/ModalProvider";
 import SupabaseProvider from "@/providers/SupabaseProvider";
 import { UserProvider } from "@/providers/UserProvider";
 import type { Metadata } from "next";
@@ -17,8 +19,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={font.className}>
+        <ToasterProvider />
         <SupabaseProvider>
           <UserProvider>
+            <ModalProvider />
             <Sidebar>{children}</Sidebar>
           </UserProvider>
         </SupabaseProvider>

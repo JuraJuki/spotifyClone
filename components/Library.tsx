@@ -1,7 +1,7 @@
 import { AiOutlinePlus } from "react-icons/ai";
 import { TbPlaylist } from "react-icons/tb";
 
-export const Library = () => {
+const Library = () => {
   const onClick = () => {
     // will handle upload
   };
@@ -25,3 +25,5 @@ export const Library = () => {
     </div>
   );
 };
+
+export default Library;

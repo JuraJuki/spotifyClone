@@ -1,7 +1,7 @@
 "use client";
-import { Box } from "@/components/Box";
-import { Library } from "@/components/Library";
-import { SidebarItem } from "@/components/SidebarItem";
+import Box from "@/components/Box";
+import Library from "@/components/Library";
+import SidebarItem from "@/components/SidebarItem";
 import { usePathname } from "next/navigation";
 import { FC, ReactNode, useMemo } from "react";
 import { BiSearch } from "react-icons/bi";

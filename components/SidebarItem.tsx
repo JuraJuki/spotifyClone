@@ -9,7 +9,7 @@ interface SidebarItemProps {
   active?: boolean;
   href: string;
 }
-export const SidebarItem: FC<SidebarItemProps> = (props) => {
+const SidebarItem: FC<SidebarItemProps> = (props) => {
   const { icon: Icon, label, active, href } = props;
 
   return (
@@ -36,3 +36,5 @@ export const SidebarItem: FC<SidebarItemProps> = (props) => {
     </Link>
   );
 };
+
+export default SidebarItem;

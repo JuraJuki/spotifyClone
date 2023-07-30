@@ -5,7 +5,7 @@ interface BoxProps {
   children: ReactNode;
   className?: string;
 }
-export const Box: FC<BoxProps> = (props) => {
+const Box: FC<BoxProps> = (props) => {
   const { children, className } = props;
 
   return (
@@ -16,3 +16,5 @@ export const Box: FC<BoxProps> = (props) => {
     </div>
   );
 };
+
+export default Box;
