@@ -1,9 +1,18 @@
+import { useAuthModal } from "@/hooks/useAuthModal";
+import { useUploadModal } from "@/hooks/useUploadModal";
+import { useUser } from "@/hooks/useUser";
 import { AiOutlinePlus } from "react-icons/ai";
 import { TbPlaylist } from "react-icons/tb";
 
 const Library = () => {
+  const authModal = useAuthModal();
+  const user = useUser();
+  const uploadModal = useUploadModal();
   const onClick = () => {
-    // will handle upload
+    if (!user) return authModal.onOpen();
+
+    // todo: check for subscriptions
+    return uploadModal.onOpen();
   };
 
   return (
