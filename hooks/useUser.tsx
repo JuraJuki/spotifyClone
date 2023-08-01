@@ -15,7 +15,6 @@ type UserContextType = {
   subscription: Subscription | null;
 };
 
-// export const useUser = () => {};
 export const UserContext = createContext<UserContextType | undefined>(
   undefined,
 );
