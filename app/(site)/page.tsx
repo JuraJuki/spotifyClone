@@ -1,7 +1,11 @@
+import getSongs from "@/actions/getSongs";
 import Header from "@/components/Header";
 import { ListItem } from "@/components/ListItem";
 
-export default function Home() {
+// makes the page non-cached, so it has the latest data
+export const revalidate = 0;
+const Home = async () => {
+  const songs = await getSongs();
   return (
     <div
       className={
@@ -28,8 +32,14 @@ export default function Home() {
         <div className={"flex justify-between items-center"}>
           <h1 className={"text-white text-2xl font-semibold"}>Newest songs</h1>
         </div>
-        <div>List of Songs!</div>
+        <div>
+          {songs.map((song) => (
+            <div key={song.id}>{song.title}</div>
+          ))}
+        </div>
       </div>
     </div>
   );
-}
+};
+
+export default Home;
