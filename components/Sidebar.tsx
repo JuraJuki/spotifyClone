@@ -2,6 +2,7 @@
 import Box from "@/components/Box";
 import Library from "@/components/Library";
 import SidebarItem from "@/components/SidebarItem";
+import { Song } from "@/types";
 import { usePathname } from "next/navigation";
 import { FC, ReactNode, useMemo } from "react";
 import { BiSearch } from "react-icons/bi";
@@ -9,6 +10,7 @@ import { HiHome } from "react-icons/hi";
 
 interface SidebarProps {
   children: ReactNode;
+  songs: Song[];
 }
 const Sidebar: FC<SidebarProps> = (props) => {
   const { children } = props;
@@ -48,7 +50,7 @@ const Sidebar: FC<SidebarProps> = (props) => {
           </div>
         </Box>
         <Box className={"overflow-y-auto h-full"}>
-          <Library />
+          <Library songs={props.songs} />
         </Box>
       </div>
       <main className={"h-full flex-1 overflow-y-auto py-2"}>{children}</main>
