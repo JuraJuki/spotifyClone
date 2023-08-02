@@ -3,6 +3,7 @@ import { SearchContent } from "@/app/search/components/SearchContent";
 import Header from "@/components/Header";
 import SearchInput from "@/components/SearchInput";
 import { FC } from "react";
+export const revalidate = 0;
 
 interface SearchProps {
   searchParams: {
