@@ -34,7 +34,8 @@ export const postData = async ({
   return res.json();
 };
 
-export const toDatetime = (seconds: number) => {
-  let t = new Date("1970-01-01T00:30:00Z");
-  t.setSeconds(seconds);
+export const toDateTime = (secs: number): Date => {
+  let t = new Date("1970-01-01T00:30:00Z"); // Unix epoch start.
+  t.setSeconds(secs);
+  return t;
 };
