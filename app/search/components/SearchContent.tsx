@@ -8,7 +8,7 @@ import { FC } from "react";
 interface SearchContentProps {
   songs: Song[];
 }
-export const SearchContent: FC<SearchContentProps> = (props) => {
+const SearchContent: FC<SearchContentProps> = (props) => {
   const { songs } = props;
   const onPlay = useOnPlay(songs);
 
@@ -32,3 +32,5 @@ export const SearchContent: FC<SearchContentProps> = (props) => {
     </div>
   );
 };
+
+export default SearchContent

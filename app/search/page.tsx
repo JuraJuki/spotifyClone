@@ -1,5 +1,5 @@
 import getSongsByTitle from "@/actions/getSongsByTitle";
-import { SearchContent } from "@/app/search/components/SearchContent";
+import SearchContent from "@/app/search/components/SearchContent";
 import Header from "@/components/Header";
 import SearchInput from "@/components/SearchInput";
 import { FC } from "react";

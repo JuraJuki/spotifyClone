@@ -1,7 +1,7 @@
 import getSongs from "@/actions/getSongs";
-import { PageContent } from "@/app/(site)/components/PageContent";
+import PageContent from "@/app/(site)/components/PageContent";
 import Header from "@/components/Header";
-import { ListItem } from "@/components/ListItem";
+import ListItem from "@/components/ListItem";
 
 // makes the page non-cached, so it has the latest data
 export const revalidate = 0;

@@ -1,6 +1,6 @@
 import { FaPlay } from "react-icons/fa";
 
-export const PlayButton = () => {
+const PlayButton = () => {
   return (
     <button
       className={`
@@ -24,3 +24,5 @@ export const PlayButton = () => {
     </button>
   );
 };
+
+export default PlayButton;

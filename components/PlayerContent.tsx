@@ -7,6 +7,7 @@ import { FC, useEffect, useState } from "react";
 import { AiFillStepBackward, AiFillStepForward } from "react-icons/ai";
 import { BsPauseFill, BsPlayFill } from "react-icons/bs";
 import { HiSpeakerWave, HiSpeakerXMark } from "react-icons/hi2";
+// @ts-ignore use-sound types faulty
 import useSound from "use-sound";
 
 interface PlayerContentProps {

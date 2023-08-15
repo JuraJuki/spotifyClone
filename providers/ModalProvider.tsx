@@ -9,7 +9,7 @@ interface ModalProviderProps {
   products: ProductWithPrice[];
 }
 
-export const ModalProvider: FC<ModalProviderProps> = (props) => {
+const ModalProvider: FC<ModalProviderProps> = (props) => {
   const { products } = props;
   const [isMounted, setIsMounted] = useState(false);
 
@@ -28,3 +28,5 @@ export const ModalProvider: FC<ModalProviderProps> = (props) => {
     </>
   );
 };
+
+export default ModalProvider;

@@ -1,5 +1,5 @@
 import getLikedSongs from "@/actions/getLikedSongs";
-import { LikedContent } from "@/app/liked/components/LikedContent";
+import LikedContent from "@/app/liked/components/LikedContent";
 import Header from "@/components/Header";
 import Image from "next/image";
 import { FC } from "react";
@@ -40,7 +40,7 @@ const Liked: FC = async () => {
           </div>
         </div>
       </Header>
-      <LikedContent songs={songs}/>
+      <LikedContent songs={songs} />
     </div>
   );
 };

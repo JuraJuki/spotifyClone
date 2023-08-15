@@ -11,7 +11,7 @@ interface LikedContentProps {
   songs: Song[];
 }
 
-export const LikedContent: FC<LikedContentProps> = (props) => {
+const LikedContent: FC<LikedContentProps> = (props) => {
   const { songs } = props;
   const router = useRouter();
   const { isLoading, user } = useUser();
@@ -42,3 +42,5 @@ export const LikedContent: FC<LikedContentProps> = (props) => {
     </div>
   );
 };
+
+export default LikedContent;

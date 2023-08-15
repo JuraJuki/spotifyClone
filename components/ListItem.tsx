@@ -9,7 +9,7 @@ interface ListItemProps {
   name: string;
   href: string;
 }
-export const ListItem: FC<ListItemProps> = (props) => {
+const ListItem: FC<ListItemProps> = (props) => {
   const { image, name, href } = props;
 
   const router = useRouter();
@@ -48,3 +48,4 @@ export const ListItem: FC<ListItemProps> = (props) => {
     </button>
   );
 };
+export default ListItem

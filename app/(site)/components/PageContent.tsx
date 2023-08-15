@@ -7,7 +7,7 @@ import { FC } from "react";
 interface PageContentProps {
   songs: Song[];
 }
-export const PageContent: FC<PageContentProps> = (props) => {
+const PageContent: FC<PageContentProps> = (props) => {
   const onPlay = useOnPlay(props.songs);
 
   if (props.songs.length === 0)
@@ -30,3 +30,5 @@ export const PageContent: FC<PageContentProps> = (props) => {
     </div>
   );
 };
+
+export default PageContent;
